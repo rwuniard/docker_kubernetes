@@ -5,13 +5,9 @@ This is the note from the docker kubernetes class - Stephen Grider
 **Docker**
 
 
-**List all containers**
-
-
-*Docker ps* => show all the docker containers that are running
-
-
-*Docker ps* --all => show all the docker containers that was run
+**List all containers**<br/>
+*Docker ps* => show all the docker containers that are running <br/>
+*Docker ps* --all => show all the docker containers that was run <br/>
 
 **Running a container**
 *Docker run hello-world* => it will create hello-world container and run it.
