@@ -2,9 +2,11 @@
 
 This is the note from the docker kubernetes class - Stephen Grider<br/>
 
-##The redis-image is the first example to create a docker container<br/>
-##The simpleweb is the second example to show how to create a nodejs simple web server and how to copy source code and all its dependencies.<br/>
-##The visits is the example to build multiple containers where the web server will be dependent on a redis in memory database.<br/>
+## The redis-image is the first example to create a docker container<br/>
+
+## The simpleweb is the second example to show how to create a nodejs simple web server and how to copy source code and all its dependencies.<br/>
+
+## The visits is the example to build multiple containers where the web server will be dependent on a redis in memory database.<br/>
 
 **Docker**
 
