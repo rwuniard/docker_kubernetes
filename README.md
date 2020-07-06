@@ -9,60 +9,60 @@ This is the note from the docker kubernetes class - Stephen Grider
 *Docker ps* => show all the docker containers that are running <br/>
 *Docker ps* --all => show all the docker containers that was run <br/>
 
-**Running a container**
-*Docker run hello-world* => it will create hello-world container and run it.
+**Running a container**<br/>
+*Docker run hello-world* => it will create hello-world container and run it.<br/>
 
-NOTES:
-Docker run  = docker create + docker start
+NOTES:<br/>
+Docker run  = docker create + docker start<br/>
 
-**Create and start a container**
-*Docker create <image_name> *=> it will return container id
-*Docker start -a <container_id>* => attach the process id and watch the output.
-*Docker start <container_id>* => you won’t see any output
+**Create and start a container**<br/>
+*Docker create <image_name> *=> it will return container id<br/>
+*Docker start -a <container_id>* => attach the process id and watch the output.<br/>
+*Docker start <container_id>* => you won’t see any output<br/>
 
-**Delete all the run containers**
-*Docker system prune*
+**Delete all the run containers**<br/>
+*Docker system prune*<br/>
 
-**Logging to log instead of printing to console**
-*Docker logs <container_id>*
+**Logging to log instead of printing to console**<br/>
+*Docker logs <container_id>*<br/>
 
-**Stopping containers**
-*Docker stop <container_id>* => wait 10 seconds and if it doesn’t stop, it will issue a kill command below.
-*Docker kill <container_id>*
+**Stopping containers**<br/>
+*Docker stop <container_id>* => wait 10 seconds and if it doesn’t stop, it will issue a kill command below. <br/>
+*Docker kill <container_id>*<br/>
 
-**Executing additional command in a container**
-*Docker exec -it <container_id> <command> *
-=> exec - run another command
-=> -it - allow us to provide input to the container and make it interactive
-=> <command> - command to execute
+**Executing additional command in a container**<br/>
+*Docker exec -it <container_id> <command> * <br/>
+=> exec - run another command <br/>
+=> -it - allow us to provide input to the container and make it interactive<br/>
+=> <command> - command to execute<br/>
 
-**Open a shell command in a container**
-*Docker exec -it <container_id> sh*
+**Open a shell command in a container**<br/>
+*Docker exec -it <container_id> sh*<br/>
 
-You can also do it with docker run
-Example:
-*Docker run -it busybody sh*
-It will run a container busybody image and go to the shell
-
-
-**Dockerfile
-----------**
-
-*FROM alpine
-
-RUN app --update redid
-CMD [“redis-server”]*
-
-**Tagging your docker image**
-*Docker  build -t <docker_id>/<project_name>:<version>
-Example: docker build -t ronsonw/redis:latest .*
+You can also do it with docker run<br/>
+Example:<br/>
+*Docker run -it busybody sh*<br/>
+It will run a container busybody image and go to the shell<br/>
 
 
-**Creating docker image from running container**
-Run a container and do something inside that container, such as install redis.
-Then you want to capture that container as an image. 
-You can do docker commit.
-*Docker commit -c ‘CMD [“redis-server”] <container_id>*
+**Dockerfile<br/>
+----------**<br/>
+
+*FROM alpine<br/>
+
+RUN app --update redis<br/>
+CMD [“redis-server”]*<br/>
+
+**Tagging your docker image**<br/>
+*Docker  build -t <docker_id>/<project_name>:<version><br/>
+Example: docker build -t ronsonw/redis:latest .*<br/>
+
+
+**Creating docker image from running container**<br/>
+Run a container and do something inside that container, such as install redis.<br/>
+Then you want to capture that container as an image. <br/>
+You can do docker commit.<br/>
+*Docker commit -c ‘CMD [“redis-server”] <container_id>*<br/>
 
 
 
