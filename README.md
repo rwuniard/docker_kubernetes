@@ -1,10 +1,16 @@
 # docker_kubernetes
 
 This is the note from the docker kubernetes class - Stephen Grider
+
 **Docker**
 
+
 **List all containers**
+
+
 *Docker ps* => show all the docker containers that are running
+
+
 *Docker ps* --all => show all the docker containers that was run
 
 **Running a container**
