@@ -8,6 +8,8 @@ This is the note from the docker kubernetes class - Stephen Grider<br/>
 
 ## The visits is the example to build multiple containers where the web server will be dependent on a redis in memory database.<br/>
 
+## The frontend is a react frontend application<br/>
+
 **Docker**
 
 **List all containers**<br/>
